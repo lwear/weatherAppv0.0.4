@@ -22,17 +22,6 @@ function getForecastFromNetwork(coords) {
       });
 }
 
-/*
-
-function getForecastFromNetwork() {
-  return fetch("forecast/48.4284,-123.3656")
-    .then(response => {
-      return response.json();
-    })
-    .catch(() => {
-      return null;
-    });
-}*/
 
 /**
  * Renders the forecast data into the card element.
@@ -268,19 +257,7 @@ function updateData() {
     });
   });
 }
-/*
-function updateData() {
-   var location = {label:"Victoria", geo:"48.4284,-123.3656"};
-   var card = getForecastCard(location);
-  
-    // Get the forecast data from the network.
-    getForecastFromNetwork()
-        .then((forecast) => {
-          renderForecast(card, forecast);
-        });
 
-}
-*/
 
 
 // start showing weather data
