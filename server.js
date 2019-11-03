@@ -10,11 +10,7 @@ const app = express();
 // global constants
 const FORECAST_DELAY = 20;
 const API_KEY = process.env.DARKSKY_API_KEY; // accesses private api key stored in .env
-//const API_KEY = "b29bbb18c441718a2f601b91c271f5ef"; // do this if .env doesn't work
 const BASE_URL = "https://api.darksky.net/forecast"; // weather api
-
-// https://api.darksky.net/forecast/b29bbb18c441718a2f601b91c271f5ef/48.4284,-123.3656
-//const url = BASE_URL + "/" + API_KEY + "/28.6472799,76.8130727";
 
 // start server
 init();
